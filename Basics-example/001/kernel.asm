@@ -2,7 +2,7 @@
 bits 16
 
 start:
-    mov ax, 0
+    xor ax,ax
     mov ds, ax
     mov es, ax
 
@@ -25,5 +25,5 @@ print:
     ret
 
 msg_kernel db "Success: Kernel Loaded at 0x1000!", 13, 10, 0
-msg_HellO  db "Hello !.............."
+msg_HellO  db "Hello .........!", 13, 10, 0
 times 2048-($-$$) db 0
