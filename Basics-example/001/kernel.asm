@@ -19,7 +19,7 @@ print:
     or al, al
     jz .done
     mov ah, 0x0E
-    int 0x10
+    int 0x10   ; interrupt
     jmp print
 .done:
     ret
