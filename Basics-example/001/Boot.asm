@@ -7,7 +7,7 @@ start:
     mov ds, ax
     mov es, ax
     mov ss, ax
-    mov sp, 0x7C00
+    mov sp, 0x7C00 ; Address Boot
     sti
 
     mov [BOOT_DRIVE], dl
