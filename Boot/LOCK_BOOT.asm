@@ -1,7 +1,7 @@
 ; write code at Disk 0 sector 0 silandr 0
 ; 512 byte Size 
 ; Nasm assembller  nasm -f bin Pass.asm -o PASS.bin 
-
+; Pass is DARK 66
 bits 16
 org 0x7C00
 
@@ -20,7 +20,7 @@ start:
     int 10h
     mov si, msg
     call print_string
-
+;************************************
     mov bh, 0x00           
 ; check Pass 
 ; === D ===
@@ -122,13 +122,16 @@ hang:
     hlt
     jmp hang
 ;******************************************
+; the color of the screen changes every time you press the right key.
 change:
     mov ax, 0x0600
     mov bh, [0x0502]
     add byte [0x0502], 0x10
     xor cx, cx
-    mov dx, 0x184F
-    int 10h
+; CX 0000 First pixel 
+   mov dx, 0x184F
+; VGA   
+   int 10h
     ret
 ;******************************************
 print_string:
