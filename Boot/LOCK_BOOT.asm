@@ -1,4 +1,4 @@
-; write code at Disck 0 sector 0 silandr 0 
+; write code at Disk 0 sector 0 silandr 0
 ; 512 byte Size 
 ; Nasm assembller  nasm -f bin Pass.asm -o PASS.bin 
 
