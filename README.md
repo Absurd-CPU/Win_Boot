@@ -84,7 +84,7 @@ Next, we set all the main registers to zero. We use xor to reduce the number of 
 and grows toward lower addresses as it is used. The CLD instruction clears the direction flag (DF). As a result, string instructions such as LODSB and
 MOVSB increment the address during normal operation.To re-enable interrupts, sti sets the IF flag to 1, allowing hardware interrupts again.
 
-    <img width="435" height="481" alt="image" src="https://github.com/user-attachments/assets/8c1a473c-c8cd-4a58-bb00-98b4587a225e" />
+   <img width="435" height="481" alt="image" src="https://github.com/user-attachments/assets/8c1a473c-c8cd-4a58-bb00-98b4587a225e" />
 
 This section of code continues the first-stage bootloader. It first saves the boot drive number, displays a message, reads four sectors from the disk,
 and, if successful, transfers execution to the second stage.
