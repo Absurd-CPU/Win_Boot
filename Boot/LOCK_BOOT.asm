@@ -2,7 +2,7 @@
 ; 512 byte Size 
 ; Nasm assembller  nasm -f bin Pass.asm -o PASS.bin 
 ; Pass is DARK 66
-; Remember  AX = BX + SP * 10 
+; Remember  16 + BX  Physical address = ES × 16 + BX   OR  ES × 10h + BX   -> AX
 bits 16
 org 0x7C00
 
