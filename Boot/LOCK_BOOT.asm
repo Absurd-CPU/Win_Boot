@@ -2,6 +2,7 @@
 ; 512 byte Size 
 ; Nasm assembller  nasm -f bin Pass.asm -o PASS.bin 
 ; Pass is DARK 66
+; Remember  AX = BX + SP * 10 
 bits 16
 org 0x7C00
 
